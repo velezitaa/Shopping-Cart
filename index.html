@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Carrito</title>
+</head>
+<body>
+    <!-- Nav bar -->
+     <nav id="nav-bar">
+        <div id="nav-content">
+            <h1 id="nav-title">Cursos.Online</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" id="shop-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              <section class="cart">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-title">Imagen</th>
+                            <th class="table-title">Nombre</th>
+                            <th class="table-title">Precio</th>
+                            <th class="table-title">Cantidad</th>
+                            <th class="table-title">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+                <button id="table-clear">VACIAR CARRITO</button>
+              </section>
+        </div>
+     </nav>
+
+    <!-- Section hero -->
+     <section id="hero">
+        <div id="hero-content">
+            <h1 id="hero-title">Aprende algo nuevo</h1>
+            <h2 id="hero-subtitle">Todos los cursos estan en 15$</h2>
+            <div id="hero-input">
+                <input type="text" placeholder="¿Qué te gustaría aprender?">
+                <svg xmlns="http://www.w3.org/2000/svg" id="hero-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  
+            </div>
+        </div>
+     </section>
+
+    <!-- Section Info -->
+     <section id="info">
+        <div id="info-container">
+            <div class="info-div">
+                <svg xmlns="http://www.w3.org/2000/svg" class="info-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                  </svg>
+                  <p>
+                    +50000 Cursos en línea <br>
+                    Explora los temas mas recientes
+                  </p>
+            </div> 
+            <div class="info-div">
+                <svg xmlns="http://www.w3.org/2000/svg" class="info-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                  </svg>
+                  
+                  <p>
+                    Instructores expertos <br>
+                    Aprende con diferentes estilos
+                  </p>
+            </div> 
+            <div class="info-div">
+                <svg xmlns="http://www.w3.org/2000/svg" class="info-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  
+                  <p>
+                    Acceso de por vida <br>
+                    Aprende a tu ritmo
+                  </p>
+            </div> 
+        </div>
+     </section>
+
+    <!-- Section courses -->
+    <section id="courses">
+        <div id="courses-container">
+            <h3 id="courses-title">Cursos en línea</h3>
+            <ul id="courses-list">
+                <li class="courses-item">
+                    <div class="course-img">
+                        <img src="imagenes-carrito/curso-1.jpg" alt="curso-1" class="course-info-img">
+                    </div>
+                    <div class="course-info">
+                        <p class="course-title">HTML, CSS, JAVASCRIPT</p>
+                        <p>Ashley Vélez</p>
+                        <p>Principiante<p>
+                        <p class="course-price">15$</p>
+                        <button class="course-btn">AGREGAR AL CARRITO</button>
+                    </div>
+                </li>
+                <li class="courses-item">
+                    <div class="course-img">
+                        <img src="imagenes-carrito/curso-2.jpg" alt="curso-2" class="course-info-img">
+                    </div>
+                    <div class="course-info">
+                        <p class="course-title">Aprende todo sobre guitarra eléctrica</p>
+                        <p>Jimi Hendrix</p>
+                        <p>Principiante<p>
+                        <p class="course-price">15$</p>
+                        <button class="course-btn">AGREGAR AL CARRITO</button>
+                    </div>
+                </li>
+                <li class="courses-item">
+                    <div class="course-img">
+                        <img src="imagenes-carrito/curso-3.jpg" alt="curso-3.jpg" class="course-info-img">
+                    </div>
+                    <div class="course-info">
+                        <p class="course-title">Tortas 101</p>
+                        <p>Wo Kafe</p>
+                        <p>Principiante<p>
+                        <p class="course-price">15$</p>
+                        <button class="course-btn">AGREGAR AL CARRITO</button>
+                    </div>
+                </li>
+                <li class="courses-item">
+                    <div class="course-img">
+                        <img src="imagenes-carrito/curso-4.jpg" alt="curso-4.jpg" class="course-info-img">
+                    </div>
+                    <div class="course-info">
+                        <p class="course-title">React 18</p>
+                        <p>Ashley Vélez</p>
+                        <p>Principiante<p>
+                        <p class="course-price">15$</p>
+                        <button class="course-btn">AGREGAR AL CARRITO</button>
+                    </div>
+                </li>
+                <li class="courses-item">
+                    <div class="course-img">
+                        <img src="imagenes-carrito/curso-5.jpg" alt="curso-5.jpg" class="course-info-img">
+                    </div>
+                    <div class="course-info">
+                        <p class="course-title">De 0 a 100 DJING</p>
+                        <p>James Hype</p>
+                        <p>Principiante<p>
+                        <p class="course-price">15$</p>
+                        <button class="course-btn">AGREGAR AL CARRITO</button>
+                    </div>
+                </li>
+                <li class="courses-item">
+                    <div class="course-img">
+                        <img src="imagenes-carrito/curso-6.jpg" alt="curso-6.jpg" class="course-info-img">
+                    </div>
+                    <div class="course-info">
+                        <p class="course-title">Mecánica 101: Todo sobre motores</p>
+                        <p>Juan Mecánico</p>
+                        <p>Principiante<p>
+                        <p class="course-price">15$</p>
+                        <button class="course-btn">AGREGAR AL CARRITO</button>
+                    </div>
+                </li>
+            </ul>    
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
